@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formularios HTML</title>
+</head>
+
+<body>
+    <h1>Creando un formulario en HTML</h1>
+
+    <p>Los formularios se pueden usar para enviar texto al servidor, por ejemplo, para introducir una informacion:
+        tambien sirve para obtener un tipo de accion por parte del cliente</p>
+    <hr />
+    <h3>Formulario</h3>
+
+    <!-- 
+            para crear un formulario se usa la etiqueta <form> 
+            
+            atributos:
+
+            action=""       para indicarle a donde va a enviar
+                            la informacion el formulario
+            
+            method=""       para indicarle que metodo vamos a usar
+                            de metodo HTTP
+            -->
+    <form>
+        <!-- 
+                los <input> son campos que se agregan,
+                estos pueden ser de diferentes tipos
+                y esto se especifica por medio de un atributo:
+
+                type=""         Indica el tipo de cambo que se creara
+                                en este caso sera un campo de texto
+                                por lo tanto se usa el type="text"
+                
+                name=""         esto nos sirve para darle un nombre al campo
+                                como si se tratase de un atributo, por ejemplo
+
+                placeholder=""  Me permite colocar un texto dentro del campo
+                                (por ejemplo una instruccion para usuario),
+                                que se veria en pantalla antes de que el usuario
+                                escriba algo dentro del campo de texto.
+                                Cuando el usuario hace click en el campo de texto
+                                este mensaje desaparece.
+
+                tambien puedo colocar un <label> el cual seria
+                el nombre que tendria ese campo. Dentro del label
+                podemos usar los atributos:
+
+                for=""      Se usaria para saber con mayor exactitud
+                            a que campo corresponde el label. En este caso
+                            como el label corresponde al input con name="nombre"
+                            se coloca for="nombre", haciendo que por medio de "nombre"
+                            la conexion entre ambos elementos sea clara
+                -->
+
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre..." />
+        </p>
+
+        <!--
+            Es parecido al input, solo que aqui creamos un campo mas grande.
+            Como su nombre lo indica, es un area para ingresar texto.            
+        -->
+
+        <p> <label for="descripccion">Descripción</label>
+            <textarea name="descripccion"></textarea>
+        </p>
+
+        <p>
+            <!--
+            Los input tipo "radio" siempre deben tener un value=""
+
+            value=""    Seria el valor que representa el hecho de que este boton
+                        este seleccionado.
+            -->
+            <input type="radio" name="Genero" value="hombre" />Hombre<br />
+            <input type="radio" name="Genero" value="mujer" />Mujer<br />
+            <input type="radio" name="Genero" value="nada" />Nada<br />
+        </p>
+
+        <p>
+            <!--
+                Un campo <select> contiene diferentes opciones para seleccionar
+                las diferentes ocpiones se indican mediante la etiqueta <option>
+                Se parece al combobox de Java.
+                
+                Tambien se debe indicar un value="" segun la option seleccionada
+            -->
+            <label for="genero2">Opciones desplegables</label>
+            <select name="genero2">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="nada">Nada</option>
+            </select>
+        </p>
+
+        <p>
+            <!-- 
+                el input de tipo type="submit" nos permite crear botones
+                por ejemplo en este caso nos permitira enviar la informacion del formulario
+                este boton tambien debe contener el atributo value=""
+            -->
+
+            <input type="submit" value="Enviar formulario" />
+        </p>
+    </form>
+</body>
+
+</html>
