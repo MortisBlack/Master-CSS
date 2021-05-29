@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <tittle>Tablas en html</tittle>
+</head>
+
+<body>
+    <h1>Haciendo "tablas en html"</h1>
+    <!--
+            Una tabla se usa para organizar un contendio en fomrato de tabla:
+            Filas y columnas
+            es una forma de organizar la informacion y el texto
+        -->
+    <h3>Tablas</h3>
+
+    <!-- 
+            las tablas se hacen con diferentes etiquetas
+
+            <table>     la etiqueta principal para crear una tabla
+
+            <tr>        para crear un fila en la tabla
+
+            <td>        para "pintar" una columna en la tabla
+
+            <th>        para resaltar la informacion de la tabla
+                        por ejemplo, los encabezados
+
+            en las tablas tambien hay atributos que se pueden usar
+            para darle estilo a la tabla
+
+            border=""   le aplica un borde a la tabla,
+                        se coloca un numero adentro 
+                        que representa el grueso del borde
+            
+            colestan="" para expandir la columna
+                        tantas columnas como yo quiera
+                        segun tantas columnas tenga en la tabla
+            -->
+
+    <table border="1">
+        <tr>
+            <th>Nombre</td>
+            <th>Apellido</td>
+            <th>Pais</td>
+        </tr>
+        <tr>
+            <td>Jesus</td>
+            <td colspan="2">Urrego</td>
+            <!-- 
+                aqui quite la columna de mexico
+                porque la de arriba ocupo los dos campos
+                util si por ejemplo no conociera el pais del usuario    
+            -->
+
+            <!-- <td>Mexico</td> -->
+        </tr>
+        <tr>
+            <td>Danny</td>
+            <td>Palacios</td>
+            <td>Colombia</td>
+        </tr>
+    </table>
+</body>
+
+</html>
