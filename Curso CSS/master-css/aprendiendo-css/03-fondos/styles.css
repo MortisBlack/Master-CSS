@@ -1,0 +1,28 @@
+body {
+    background-color: tan;
+    background-image: url(img/patron02.png);
+
+    /* puedo indicar de que manera se repite la imagen*/
+    background-repeat: repeat;
+
+    /* con este puedo indicar el tamaño */
+    background-size: 400px;
+
+    color: white;
+
+    /* aqui determino el comportamiento del fondo segun lo que se haga con el mouse */
+    background-attachment: fixed;
+}
+
+#caja {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: tomato;
+    color:white;
+}
+
+h2{
+    background-image: url(img/patron01.jpg);
+    padding: 10px;
+    color: tomato;
+}
