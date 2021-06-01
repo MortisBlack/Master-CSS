@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- 
+        la etiqueta <meta> con el atributo charset="utf-8"
+        nos permite indicarle a la pagina como debe leer
+        letras como la ñ o que tengan un acento 
+    -->
+    <meta charset="utf-8" />
+    <title>Máster en CSS de Jesús Urrego</title>
+
+    <!-- 
+        La etiqueta <style> se puede declarar en cualquier punto del html
+        pero lo normal es hacerlo dentro del <head>
+            
+        Como la idea es trabajar con el archivo styles.css
+        se quita la etiqueta de este proyecto con su contenido
+        ya que todo esto se hara en el archivo mencionado
+
+    <style>
+        h1 {
+            color: red;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+    </style>
+    -->
+
+    <!--
+        Ahora que hemos quitado el <style>
+        tenemos que cargar el contenido de styles.css de alguna manera aqui
+        para eso usamos la etiqueta <link>
+
+        rel=""      es importante
+
+        type=""     el tipo
+
+        href=""     para indicar de donde lo toma
+    -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <h1>Máster en CSS con Víctor Robles WEB</h1>
+    <ul id="menu">
+        <!--
+            el "#" adentro del href=""
+            nos permite crera un enlace vacio
+        -->
+        <li><a href="#">Inicio</a></li>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">LESS</a></li>
+        </ul>
+        <li><a href="#">Temario</a></li>
+        <li><a href="#">Reseñas</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <div id="descripcion">Descripción del curso</h2>
+        <p class="parrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam omnis totam explicabo, dolorem ducimus
+            voluptate reprehenderit enim impedit cumque labore corrupti! Cum provident cupiditate libero harum ratione
+            minus molestiae officiis?
+        </p>
+        <p class="parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consectetur perferendis dignissimos
+            facere!
+        </p>
+        <p class="parrafo">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit fugit placeat hic modi ipsum magni
+            dicta impedit! Illo libero quasi doloribus labore rem excepturi dolores dignissimos, maxime laboriosam
+            dolorum itaque? Voluptatum quia nesciunt id aspernatur adipisci expedita eveniet temporibus.
+        </p>
+    </div>
+
+    <div id="usuario">
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" />
+
+            <label for="apellido">Apellidos</label>
+            <input type="text" name="apellidos" />
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </div>
+
+    <hr />
+    <div id="saludo">
+        <h1>Hola, soy Jesús Urrego</h1>
+    </div>
+
+    <hr />
+    <footer>
+        Todos los derechos reservados &copy; <a href="https://victorroblesweb.es"> Víctor Robles</a>
+    </footer>
+</body>
+
+</html>

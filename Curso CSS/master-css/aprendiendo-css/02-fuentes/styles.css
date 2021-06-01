@@ -1,0 +1,26 @@
+h1 {
+    /*  
+        Permite asignarle un tipo de fuente al elemento
+        se ven tres tipos de letra en linea porque
+        en caso de que falle Arial se veria Helvetica
+        y en caso de que tambien fallara Helvetica se veria sans-serif
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+h3 {
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    font-weight: lighter;
+
+    /*
+        font-size: 1em; -> 1em es = a 16px
+    */
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
