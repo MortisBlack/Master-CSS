@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    la pseudoclase "first-child" 
+    hace que unicamente se modifique lo primero de varias cosas.
+    En este caso de 4 li que hay solo el primero cambia de color
+*/
+ul li:first-child {
+    color: purple;
+}
+
+/*
+    la pseudoclase "nth-child(n)" 
+    hace que unicamente se modifique lo que seleccionamos por medio de "n"
+*/
+ul li:nth-child(3) {
+    color: red;
+}
+
+#mi-enlace {
+    font-size: 30px;
+    color: lightsalmon;
+}
+
+/*
+    El color que tiene el enlace antes de visitarlo
+*/
+#mi-enlace:link {
+    font-size: 30px;
+    color: red;
+}
+
+/*
+    El color que tiene el enlace despues de visitarlo
+*/
+#mi-enlace:visited {
+    font-size: 30px;
+    color: lightpink;
+}
+
+#mi-enlace:hover {
+    font-size: 30px;
+    color: tomato;
+}
+
+/*
+    Mientras pulso se aplica
+*/
+#mi-enlace:active {
+    font-size: 100px;
+    color: greenyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus {
+    border: 4px dashed red;
+}
