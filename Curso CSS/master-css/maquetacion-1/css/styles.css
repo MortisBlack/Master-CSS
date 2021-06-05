@@ -12,10 +12,41 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src:    url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+            url("fonts/websymbols-regular-webfont.eot");
+    src:    url("fonts/websymbols-regular-webfont.eot#iefix") format("embedded-opentype"),
+            url("fonts/websymbols-regular-webfont.woff") format("woff"),
+            url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Estilos generales */
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.icono {
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
 * {
     padding: 0px;
-    margin: opx;
+    margin: 0px;
 }
 
 a {
@@ -30,6 +61,18 @@ a:hover {
 a:visited {
     color: #529152;
     text-decoration: none;
+}
+
+.red {
+    color: rgb(221, 85, 61) !important;
+}
+
+.blue {
+    color: rgb(76, 156, 206) !important;
+}
+
+.yellow {
+    color: rgb(196, 183, 14) !important;
 }
 
 body {
@@ -221,7 +264,6 @@ button:active {
 /* Barra lateral */
 
 #aside, #frase {
-    clear: both;
     width: 200px;
     float: left;
     margin: 30px;
@@ -255,7 +297,7 @@ button:active {
 #frase #cajaFrase {
     background-color: whitesmoke;
     margin: 0px auto;
-    padding: 10px;
+    padding: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
     box-shadow: 2px 2px 2px #ccc;
@@ -331,8 +373,79 @@ button:active {
     list-style: square;
 }
 
-/*
-#aside > .widget > form > a {
-    text-decoration: none;
+/* Secciones */
+
+#sections {
+    float:right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
 }
-*/
+
+#sections .titulo {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    font-family: "fajala";
+    padding-top: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .date {
+    color: grey;
+    font-size: 14px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo {
+    position: absolute;
+    margin-top: -78px;
+    z-index: 0;
+}
+
+ #sections .stickerTwo {
+    margin-left: 860px;
+}
+
+/* footer */
+
+#history {
+    float: right;
+    margin-top: 20px;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+}
+
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
