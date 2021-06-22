@@ -21,6 +21,28 @@ h1 {
     font-style: italic;
     text-transform: uppercase;
     font-size: 45px;
+
+    
+
+    /* 
+    Colores 
+
+    Colores del sistema
+    color: orangered;
+
+    Colores hexadecimales
+    color: #000000;
+
+    Este me permite darle un "color transparente"
+    color: transparent;
+
+    Colores RGB
+    color: rgb(255, 255, 107);
+
+    Colores RGBA (incluye transparencia)
+    color: rgba(255, 255, 107, 0.5);
+    */
+
 }
 
 h3 {
